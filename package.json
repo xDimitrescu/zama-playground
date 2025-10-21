@@ -1,0 +1,33 @@
+{
+  "name": "zama-fhevm-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "lint": "eslint \"{contracts,scripts,test}/**/*.{ts,tsx,js}\"",
+    "format": "prettier --write .",
+    "typecheck": "tsc --noEmit",
+    "deploy:devnet": "hardhat run scripts/deploy.ts --network zamaDevnet",
+    "interact:devnet": "hardhat run scripts/interact.ts --network zamaDevnet"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@types/chai": "^4.3.10",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.11.17",
+    "@typescript-eslint/eslint-plugin": "^6.19.1",
+    "@typescript-eslint/parser": "^6.19.1",
+    "chai": "^4.3.10",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "hardhat": "^2.22.2",
+    "mocha": "^10.2.0",
+    "prettier": "^3.1.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.3"
+  }
+}
